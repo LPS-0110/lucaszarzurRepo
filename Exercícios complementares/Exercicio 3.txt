@@ -21,21 +21,28 @@ Fimalgoritmo
 2 - Faça um algoritmo que calcule a idade de uma pessoa com base em sua idade em total da idade (ex: 25), meses (ex: 8) e dias após o dia do seu aniversário no mês atual (ex:5) (o usuário quem irá inserir as informações), e exiba na tela.
 
 Var
-// Seção de Declarações das variáveis 
-idade, meses, dias: inteiro
+// Seção de Declarações das variáveis
+idade,mes, meses, dias: inteiro
+mesAtual: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc...
 
-Escreval: ("Digite sua idade em anos: ", idade )
-Leia: (idade)
+Escreval ("Digite sua idade em anos: ", idade )
+Leia (idade)
 
-Escreval: ("Digite quantidade de meses completos desde o mês do seu aniversário: ", meses)
-Leia: (meses)
+Escreval ("Digite o mês do seu aniversário: ", mes)
+Leia (mes)
 
-Escreval: ("Digite o dia de hoje: ", dias )
-Leia: (dias)
+Escreval ("Digite o mês atual: ", mesAtual)
+Leia (mesAtual)
 
+meses <- ((12-mes)+mesAtual)
+
+Escreval ("Digite o dia de hoje: ", dias )
+Leia (dias)
+
+Escreval ( " A sua idade é ",idade, meses, "meses e ", dias, "dias")
 Fimalgoritmo
 
 
