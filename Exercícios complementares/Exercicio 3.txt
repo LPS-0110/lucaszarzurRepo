@@ -50,7 +50,37 @@ OBS: (A = altura)
 
 5 - Faça um algoritmo que leia o valor do produto, a porcentagem do valor do juros, e a quantidade de vezes em que foi parcelado esse produto. Calcule o valor final, além dos juros e valor por parcela, (inseridos pelo usuário), e exiba na tela toda as informações.
 
+// Data atual  : 03/04/2022
+Var
+// Seção de Declarações das variáveis
+ 
+valorDoProduto: real
+porcetagemJuros: real
+parcelas: inteiro
 
+valorFinal: real
+valorParcela : real
+
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+Escreval("Digite o valor do produto: ", valorDoProduto  )
+Leia(valorDoProduto)
+
+Escreval("Digite porcentagem de juros: ", porcetagemJuros)
+Leia(porcetagemJuros)
+
+Escreval("Digite o numero de parcelas: ", parcelas )
+Leia(parcelas)
+
+valorFinal <- (((porcetagemJuros/100)* valorDoProduto)+ valorDoProduto)
+Escreval(" O valor final é: ", valorFinal)
+valorParcela <- (valorFinal/parcelas)
+Escreval(" O valor da parcela será: ", valorParcela)
+
+Fimalgoritmo
 
 
 
